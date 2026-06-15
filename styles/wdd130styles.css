@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --primary-color: #134266;
+    --secondary-color:#FDE587;
+    --accent1-color: #78C5D7;
+    --accent2-color: white;
+    --heading-font: "Oswald";
+    --paragraph-font: "Montserrat";
+    --headline-color-on-white: #134266;  /* headlines on a white background */ 
+    --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #134266;
+}

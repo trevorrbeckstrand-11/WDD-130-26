@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
+h1{
+    font-family: "Fira Sans";
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h2{
+    font-family: "Intel One Mono";
+    font-size: 2.5 em;
+    text-align: center;
+    margin-top: 0;
+    color: darkolivegreen;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid darkolivegreen;
+    border-bottom: 2px solid darkolivegreen;
+    height: 50px;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: darkolivegreen;
+    font-weight: bolder;
+
+}
+
+img{
+    max-width: 200px;
+    border: solid black;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px 0;
+}
+
+#img-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 1500px;
+    align-content: center;
+    gap: 15px;
+}
+
+/* Go here to get fonts: https://fonts.google.com/*/
+/* Select a font, and copy it's @import statement. Paste at the top of this file.*/
+
+/* Flexbox cheat sheet: https://flexbox.malven.co/*/

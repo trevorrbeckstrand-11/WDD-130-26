@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@700&display=swap');
+
+:root {
+    --primary:    #2F2F2F;  
+    --accent:     #4A5C4F;
+    --secondary:  #8C7A6B; 
+    --light:      #F8F6F3;   
+    --neutral:    #6B6B6B;   
+    --highlight:  #A8B5A2;    
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;   
+}
+
+h1 {
+    margin: 0;
+    color: var(--accent);
+    padding: 20px;
+    background-color: var(--highlight);
+    border-radius: 15px;
+}
+
+/* header */
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(47, 47, 47, 0.88);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light);
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    background-color: var(--highlight);
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+header img {
+    width: 75px;
+    height: 75px;
+    place-self: center;
+}
+
+/* hero */
+
+#hero-img img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+#hero {
+    display: grid;
+}
+
+#hero-img, #hero-msg {
+    grid-area: 1/1;
+}
+
+#hero-msg {
+    margin-top: 115px;
+    padding: 45px 28px 28px 28px;
+    place-self: center;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(47, 47, 47, 0.88);
+    color: var(--light);
+}
+
+/* main */
+
+main {
+    padding: 20px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+#card-table-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.card, #table {
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid var(--primary);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--accent);
+    border-bottom: 3px solid var(--highlight);
+    padding-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    line-height: 40px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+ul li a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid var(--neutral);
+}
+
+th {
+    background: var(--primary);
+    color: white;
+}
+
+#table {
+    grid-column: 1 / -1;
+}
+
+/* form section */
+
+#form-section {
+    background-color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    padding: 50px 70px 70px 70px;
+    align-self: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+#form-section h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    text-align: center;
+    color: var(--light);
+}
+
+#img-form-wrap {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    align-items: start;
+    margin: 0 auto;
+}
+
+#form-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+#img-form-wrap form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    background: var(--highlight);
+    color: var(--primary);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #8f9b87;
+    transform: translateY(-3px);
+}
+
+/* footer */
+
+footer {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+#icons {
+    display: flex;
+    gap: 20px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
