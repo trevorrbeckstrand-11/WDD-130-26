@@ -108,7 +108,7 @@ main {
 
 #card-table-wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     margin-bottom: 40px;
     padding: 40px;
@@ -142,6 +142,32 @@ ul li a {
 ul li a:hover {
     color: var(--accent);
     text-decoration: underline;
+}
+
+#card-table-wrap h2, ul {
+    margin: 0;
+}
+
+.card {
+   display: flex;
+   flex-direction: column; 
+   text-align: center;
+   gap: 20px;
+}
+
+#card-one {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+#card-two {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+#card-three {
+    grid-column: 3/4;
+    grid-row: 1;
 }
 
 table {
